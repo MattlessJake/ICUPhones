@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Overlock");
+
+:root {
+    --colorA: #234175;
+    --colorB: #efefef;
+    --colorC: #2d5393;
+    --colorD: #000b21;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+#head {
+    display: flex;
+    height: 120px;
+    border: none;
+    background-color: var(--colorA);
+    color: var(--colorB);
+}
+
+#logo {
+    width: 110px;
+    margin: 5px;
+}
+
+#nav {
+    width: 120px;
+    border: none;
+    
+}
+
+#header {
+    flex: 1 1 10%;
+    text-align: center;
+    display: flex;
+    
+}
+
+#body {
+    display: flex;
+}
+
+#side {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 25%;
+    background-color: var(--colorC);
+    color: var(--colorB);
+}
+
+#news {
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+}
+
+#side {
+    width: 100%;
+}
+
+#main {
+    flex: 1 1 75%;
+    padding: 2em 1em 1em 1em;
+}
+
+#footer {
+    height: 60px;
+    width: 100%;
+    background-color: var(--colorA);
+    color: var(--colorB);
+}
+
+.linkLi {
+    height: 40px;
+    list-style: none;
+}
+
+.link1, .link2, .link3 {
+    position: absolute;
+    text-decoration: none;
+    color: #efefef;
+    transition-duration: 0.3s;
+}
+
+.link1:hover, .link2:hover, .link3:hover {
+    background-color: var(--colorC);
+}
+
+.link1 {
+    padding: 10px 40px;
+}
+
+.link2 {
+    padding: 10px 43px;
+}
+
+.link3 {
+    padding: 10px 30px;
+}
+
+.header {
+    font-family: 'Overlock', cursive;
+    font-size: 1.5em;
+    padding: 0.3em;
+}
+
+.h1 {
+    font-size: 2.5em;
+    flex: 0 1 50%;
+}
+
+.h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+}
+
+p {
+    padding: 10px;
+}
+
+.phone {
+    height: 400px;
+    padding: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+#grid {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 30px;
+    margin: 40px;
+    grid-template-columns: 400px 400px 400px;
+}
+
+#boxes {
+    margin: 20px
+}
+
+.checkbox {
+    margin: 5px 10px;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.pages {
+    width: 40px;
+    height: 40px;
+    font-size: 1.4em;
+    cursor: pointer;
+    border: none;
+    background: #ddd;
+    transition-duration: 0.3s;
+    border-radius: 10px;
+}
+
+.pages:hover {
+    background: #bbb;
+}
+
+.page {
+    text-align: center;
+}
+
+.box {
+    width: 400px;
+    transition-duration: 0.3s;
+}
+
+.box:hover {
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.logo {
+    width: 110px;
+    height: 110px;
+    padding: 5px;
+}
+
+
+
+
+
+.mySlides {
+    display: none;
+    width: 960px;
+}
+
+.slideshow-container {
+    width: 960px;
+    height: 500px;
+    margin: auto;
+}
+
+.dot {
+    display: none;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    .mySlides {width:200px}
+    .slideshow-container {width: 200px; height: 100px;}
+}
+
+.margin {
+    margin: 1em;
+}
+
+.pnumber {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.newsbox {
+    background-color: var(--colorA);
+    margin: 3.5em 1.5em;
+    padding: 1em;
+    border-radius: 25px 0 0 25px;
+    height: 300px;
+    overflow: auto;
+}
+
+
+
+
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 400px;
+}
+  
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto 5em;
+    display: inline-block;
+    height: 600px;
+
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto 0;
+    display: inline;
+    width: 50%;
+    max-width: 700px;
+    text-align: left;
+    color: #ccc;
+    padding: 10px 0;
+    background-color: var(--colorB);
+    color: var(--colorA);
+    border-radius: 50px;
+    padding: 3em;
+    
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+#close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#close:hover,
+#close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 1200px){
+    #grid {
+        grid-template-columns: 400px 400px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #grid {
+        grid-template-columns: 400px;
+    }
+}
