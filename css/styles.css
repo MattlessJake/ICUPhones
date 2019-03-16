@@ -391,25 +391,45 @@ p {
         grid-template-columns: 300px 300px;
         overflow-x: hidden;
     }
+    .linkLi {
+        height: 100px;
+        font-size: 1.5em;
+    }
     .phone {
         height: 300px;
     }
     #nav-mobile {
         display: flex;
+        height: 300px;
     }
     #nav-mobile .link1 {
-        padding: 10px 48%;
+        padding: 31.5px 48%;
     }
     #nav-mobile .link2 {
-        padding: 10px 48.5%;
+        padding: 31.5px 48.5%;
     }
     #nav-mobile .link3 {
-        padding: 10px 48%;
+        padding: 31.5px 48%;
     }
     #nav {
         display: none;
     }
     .slideshow-container {
         height: 410px;
+    }
+    .pages {
+        width: 80px;
+        height: 80px;
+    }
+    .modal-content {
+        height: 400px;
+        margin: auto auto;
+    }
+    #caption {
+        margin: auto 0 auto auto;
+        font-size: 1.2em;
+    }
+    #close {
+        font-size: 80px;
     }
 }
