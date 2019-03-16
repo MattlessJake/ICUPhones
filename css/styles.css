@@ -420,6 +420,8 @@ p {
     .pages {
         width: 80px;
         height: 80px;
+        font-size: 2em;
+        border-radius: 30px;
     }
     .modal-content {
         height: 400px;
@@ -431,5 +433,17 @@ p {
     }
     #close {
         font-size: 80px;
+    }
+    #news {
+        height: 500px;
+    }
+    p {
+        margin: 0.7em;
+    }
+    .header {
+        margin: 0.5em;
+    }
+    #footer {
+        height: 90px;
     }
 }
