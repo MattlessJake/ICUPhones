@@ -383,7 +383,10 @@ p {
     }
 }
 
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 1000px){
+    body {
+        font-size: 1.3em;
+    }
     #grid {
         grid-template-columns: 300px 300px;
         overflow-x: hidden;
@@ -407,6 +410,6 @@ p {
         display: none;
     }
     .slideshow-container {
-        height: 370px;
+        height: 410px;
     }
 }
