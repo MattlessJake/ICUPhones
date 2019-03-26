@@ -1,7 +1,7 @@
 // Get the modal
 var modal = document.getElementById('myModal');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+// Get the image and insert it inside the modal (when you click a phone) This is done for each phone
 
 var close = document.getElementById('close');
 var modalImg = document.getElementById("img01");

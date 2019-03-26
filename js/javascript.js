@@ -1,7 +1,7 @@
 var slideIndex = 0;
 showSlides();
 
-function showSlides() {
+function showSlides() { //Adds the functionality of the slideshow on the home page
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
