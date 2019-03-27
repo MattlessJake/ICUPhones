@@ -374,6 +374,16 @@ iframe {
     margin: 40px;
 }
 
+.ex {
+    transition-duration: 0.3s;
+    margin: 1em;
+}
+
+.ex:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 1400px){
     #grid {
